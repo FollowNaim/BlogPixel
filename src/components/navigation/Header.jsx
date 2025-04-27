@@ -19,7 +19,9 @@ function Header() {
           </ul>
         </div>
         <div>
-          <Button>Sign In</Button>
+          <Link to={"/signin"}>
+            <Button className={"cursor-pointer"}>Sign In</Button>
+          </Link>
         </div>
       </div>
     </div>
