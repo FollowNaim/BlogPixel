@@ -1,15 +1,18 @@
+import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 
 function Header() {
   return (
-    <div>
-      <div className="container mx-auto flex justify-between items-center">
+    <div className="border-b">
+      <div className="container px-4 py-2 mx-auto flex justify-between items-center">
         <div>
-          <h2 className="font-black font-cursive">Blog Pixel.</h2>
+          <h2 className="font-bold text-2xl font-cursive">Blog Pixel.</h2>
         </div>
         <div>
-          <ul>
-            <li>Home</li>
+          <ul className="flex justify-center items-center gap-4">
+            <Link to="/">
+              <li>Home</li>
+            </Link>
             <li>About</li>
             <li>Blog</li>
             <li>Contact</li>
